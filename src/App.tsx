@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Mail, ExternalLink, Terminal, Cpu } from 'lucide-react';
+import { GithubLogo, LinkedinLogo, Envelope, Export, Terminal, Cpu } from '@phosphor-icons/react';
 
 export default function App() {
   const projetos = [
@@ -31,13 +31,13 @@ export default function App() {
 
           <div className="flex gap-4 pt-4">
             <a href="https://github.com/diasminerva" target="_blank" rel="noreferrer" className="p-3 bg-zinc-900 border border-zinc-800 rounded-lg hover:border-emerald-500 hover:text-emerald-400 transition-colors">
-              <Github className="w-5 h-5" />
+              <GithubLogo className="w-5 h-5" />
             </a>
             <a href="https://linkedin.com/in/seu-linkedin" target="_blank" rel="noreferrer" className="p-3 bg-zinc-900 border border-zinc-800 rounded-lg hover:border-emerald-500 hover:text-emerald-400 transition-colors">
-              <Linkedin className="w-5 h-5" />
+              <LinkedinLogo className="w-5 h-5" />
             </a>
             <a href="mailto:seu-email@gmail.com" className="p-3 bg-zinc-900 border border-zinc-800 rounded-lg hover:border-emerald-500 hover:text-emerald-400 transition-colors">
-              <Mail className="w-5 h-5" />
+              <Envelope className="w-5 h-5" />
             </a>
           </div>
         </section>
@@ -55,10 +55,10 @@ export default function App() {
                   <h3 className="text-xl font-bold text-zinc-100">{proj.titulo}</h3>
                   <div className="flex gap-3">
                     <a href={proj.github} target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-zinc-100">
-                      <Github className="w-5 h-5" />
+                      <GithubLogo className="w-5 h-5" />
                     </a>
                     <a href={proj.link} target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-emerald-400">
-                      <ExternalLink className="w-5 h-5" />
+                      <Export className="w-5 h-5" />
                     </a>
                   </div>
                 </div>
